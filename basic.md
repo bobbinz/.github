@@ -398,7 +398,7 @@ In addition to this, TeleBASIC allows for creation of multi-dimensional arrays, 
 - [`STOP`](#stop)  Halts the program and prints the current line
 - [`STR$(n)`](#strn)  Returns `n` as a string value
 - [`STRING$(n, s$)`](#stringn-s)  Repeats the string `s$` `n` times
-- [`SYS`](#sys)  HP2000 Access BASIC system information
+- [`SYS(n)`](#sysn)  HP2000 Access BASIC system information
 - [`SYSTEM`](#end)  End program execution silently, without additional output
 
 #### T
