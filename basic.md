@@ -1792,7 +1792,7 @@ Returns the number of user's sysops
 
 ### `TH_ADMINS`
 
-Returns the numbers of user's admins
+Returns the number of user's satellite admins
 
 ```
 10  PRINT TH_ADMINS
