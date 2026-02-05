@@ -405,7 +405,7 @@ In addition to this, TeleBASIC allows for creation of multi-dimensional arrays, 
 
 - [`TAB(n), TAB$(n)`](#tabn-tabn)  Returns `n` spaces (not tabs!)
 - [`TAN(n)`](#tann)  Returns the trigonometric tangent of the angle `n` (in radians)
-- [`TH_ADMINS`](#th_admins)  Returns the number of admins for the user
+- [`TH_ADMINS`](#th_admins)  Returns the number of satellite admins for the user
 - [`TH_B64D$`](#th_b64d)  Returns argument decoded from base64
 - [`TH_B64E$`](#th_b64e)  Returns argument encoded to base64
 - [`TH_DEFGROUP$`](#th_defgroup)  Returns the user's defgroup, separated by spaces
