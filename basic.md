@@ -405,6 +405,7 @@ In addition to this, TeleBASIC allows for creation of multi-dimensional arrays, 
 
 - [`TAB(n), TAB$(n)`](#tabn-tabn)  Returns `n` spaces (not tabs!)
 - [`TAN(n)`](#tann)  Returns the trigonometric tangent of the angle `n` (in radians)
+- [`TH_ADMINS`](#th_admins)  Returns the number of satellite admins for the user
 - [`TH_B64D$`](#th_b64d)  Returns argument decoded from base64
 - [`TH_B64E$`](#th_b64e)  Returns argument encoded to base64
 - [`TH_DEFGROUP$`](#th_defgroup)  Returns the user's defgroup, separated by spaces
@@ -417,6 +418,7 @@ In addition to this, TeleBASIC allows for creation of multi-dimensional arrays, 
 - [`TH_HASSYSOP(bbs$)`](#th_hassysopbbs)  Returns 1 if the user has sysop on `bbs$`
 - [`TH_HOSTNAME$`](#th_hostname)  Returns current hostname or hostname of argument passed
 - [`TH_LOCALTIME[$]`](#th_localtime)  Returns a human-readable local time for a timestamp
+- [`TH_LOGINS`](#th_logins)  Returns the number of logins for the user
 - [`TH_MD5BASE64$`](#th_md5base64)  Returns md5 hex of argument passed as base64
 - [`TH_MD5HEX$`](#th_md5hex)  Returns md5 hex of argument passed as hex
 - [`TH_MODEM$`](#th_modem)  Returns modem information depending on option passed
@@ -425,10 +427,12 @@ In addition to this, TeleBASIC allows for creation of multi-dimensional arrays, 
 - [`TH_RE(txt$,pat$,count,case)`](#th_retxtpatcountmodeignorecase)  Returns regex matches
 - [`TH_RE$(txt$,pat$,ind$,case)`](#th_retxtpatindignorecase)  Returns regex matches
 - [`TH_REV$(s$)`](#th_revs)  Returns the string `s$` in reverse order
+- [`TH_ROOTS`](#th_roots)  Returns the number of roots for the user
 - [`TH_SED$(txt$,find$,replace$,opt$)`](#th_sedtxtfindreplaceopt)  Substitute matched substring
 - [`TH_SPRINTF$(fmt$,[...])`](#th_sprintffmt)  Returns a formatted string
 - [`TH_STATUS$`](#th_status)  Returns the user's status as a string
 - [`TH_SYSLEVEL`](#th_syslevel)  Returns the user's Telehack system level
+- [`TH_SYSOPS`](#th_sysops)  Returns the number of sysops for the user
 - [`TH_TIME`](#th_time)  Returns the current UNIX timestamp
 - [`TH_UUD$(s$)`](#th_uuds)  Decodes a uuencoded string
 - [`TH_UUE$(s$)`](#th_uues)  Returns uuencoded form of input string
@@ -1748,6 +1752,54 @@ Returns the user's Telehack system level.  Optionally takes a username as argume
 ```
 
 _The user executing the above code would evidently have **12** badges._
+
+
+### `TH_LOGINS`
+
+Returns the number of user's logins
+
+```
+10  PRINT TH_LOGINS
+```
+```
+ 18
+```
+
+
+### `TH_ROOTS`
+
+Returns the number of user's roots
+
+```
+10  PRINT TH_ROOTS
+```
+```
+ 9
+```
+
+
+### `TH_SYSOP`
+
+Returns the number of user's sysops
+
+```
+10  PRINT TH_SYSOP
+```
+```
+ 5
+```
+
+
+### `TH_ADMINS`
+
+Returns the number of user's satellite admins
+
+```
+10  PRINT TH_ADMINS
+```
+```
+ 1
+```
 
 
 ### `TH_HASBADGE(badge$)`
